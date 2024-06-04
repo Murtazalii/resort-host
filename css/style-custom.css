@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: #000;
+    background-image: url(../images/mount.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+a.nav-link {
+    white-space: nowrap;
+}
+
+a {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-hero.overlay p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+
+.fs-1 {
+    font-size: 50px!important;
+}
+
+.fs-2 {
+    font-size: 40px!important;
+}
+
+.fs-4 {
+    font-size: 30px!important;
+}
+
+.fs-5 {
+    font-size: 20px!important;
+}
+
+.fs-6 {
+    font-size: 18px!important;
+}
+
+@media (max-width: 1199.98px) {
+    .fs-1 {
+      font-size: 40px!important;
+    }
+    .fs-2 {
+        margin-top: 10px;
+    }
+    .fs-4 {
+        font-size: 20px!important;
+    }
+    .about_wrapper {
+        grid-template-columns: none!important;
+    }
+    .house_card {
+        grid-template-columns: none!important;
+    }
+    .card_info {
+        order: -1;
+    }
+    .card_photo {
+        order: 2;
+    }
+    .card_photo {
+        margin-top: 0px!important;
+    }
+}
+
+.h-60 {
+    height: 60%;
+}
+
+.line-h-1 {
+    line-height: 1;
+}
+
+.room-specs {
+    color: #6C757D;
+}
+
+.btn.btn-custom {
+    color: #fff;
+    border-color:#658BAA;
+    border-width: 2px;
+    width: 25%;
+    border-radius: 100px 100px 100px 100px / 200% 200%;
+}
+  
+.btn.btn-custom:hover, .btn.btn-custom:active, .btn.btn-custom:focus {
+    border-color: #658BAA;
+    background: #658BAA;
+    width: 28%;
+    border-width: 6px;
+}
+
+/* * {
+    border: 1px solid #e54c4c;
+} */
+
+
+/* WHATSAPP WIDGET */
+.whatsapp-button {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    background: #25D366; /*цвет кнопки*/
+    border-radius: 50%;
+    width: 60px; /*ширина кнопки*/
+    height: 60px; /*высота кнопки*/
+    color: #fff;
+    text-align: center;
+    line-height: 60px; /*центровка иконки в кнопке*/
+    font-size: 35px; /*размер иконки*/
+    z-index: 9999;
+}
+.whatsapp-button a {
+    color: #fff;
+}
+.whatsapp-button:before,
+.whatsapp-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #25D366; /*цвет анимированных волн от кнопки*/
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden; 
+}
+ 
+.whatsapp-button:after{
+    animation-delay: .5s;
+}
+ 
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@media (max-width : 800px) {  
+    .whatsapp-button {   
+        bottom: 5px; /*отступ кнопки снизу от экрана*/
+        left: 70px; /*отступ кнопки слева от экрана(right - справа)*/
+      }
+}
+/* WHATSAPP WIDGET */
+
+.scale {
+    transition: .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.scale:hover {
+    transform: scale(1.05);
+}
+
+.room {
+    box-shadow: 0 0 10px rgba(0,0,0,.10);
+}
+
+.buttons_room {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.details {
+    width: 60%;
+    height: 46px;
+    background-color: #b99365;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 100px 100px 100px 100px / 200% 200%;
+    text-transform: none;
+    transition: .3s ease;
+}
+
+.details:hover {
+    background-color: #b99365;
+}
+.house_card {
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    align-items: center;
+}
+.card_info {
+    height: 100%;
+    order: 2;
+}
+.card_info p {
+    font-size: 18px;
+}
+.card_photo {
+    width: 100%;
+    max-width: inherit;
+    border-radius: 20px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: contain;
+    box-sizing: border-box;
+    order: -1;
+    margin-top: 15px;
+}
+.about_wrapper {
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    align-items: center;
+}
+
+.about_info {
+    /* width: 50%; */
+    height: 100%;
+}
+.about_info p {
+    font-size: 16px;
+}
+
+.about_photo {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+    max-width: inherit;
+    border-radius: 20px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: contain;
+    box-sizing: border-box;
+}
+
+.price {
+    /* text-align: center; */
+    font-family: "Montserrat", sans-serif;
+    margin-right: auto;
+    font-size: 26px;
+    letter-spacing: .1em;
+    line-height: 1;
+}
+
+.information {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.iphone {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.adres {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.time_work {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.information p {
+    font-size: 20px;
+}
+.obertka {
+    display: flex;
+}
+
+/* GALLERY */
+.image-grid div {
+    width: 30%;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+  
+.images1 { 
+background-image: url('../images/gallery_img1.jpg'); 
+border-radius: 20px
+}
+.images2 { 
+background-image: url('../images/gallery_img2.jpg'); 
+border-radius: 20px
+}
+.images3 { 
+background-image: url('../images/gallery_img3.jpg'); 
+border-radius: 20px
+}
+.images4 { 
+background-image: url('../images/gallery_img4.jpg'); 
+border-radius: 20px
+}
+.images5 { 
+background-image: url('../images/gallery_img5.jpg'); 
+border-radius: 20px
+}
+.images6 { 
+background-image: url('../images/gallery_img6.jpg'); 
+border-radius: 20px
+}
+@media screen and (max-width:1200px) {
+    .details {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .footer_logo {
+        width: 30%!important;
+    }
+    .btn.btn-custom {
+        width: auto;
+    }
+}
+@media screen and (max-width:991px) {
+    .header_logo {
+        width: 100%!important;
+    }
+}
+
+@media (min-width:426px) and (max-width:767px) {
+    .header_logo {
+        width: 50%!important;
+    }
+}
+
+@media (min-width:260px) and (max-width:992px) {
+    .btn.btn-custom:hover, .btn.btn-custom:active, .btn.btn-custom:focus{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+.image-grid div { 
+width: 48%; 
+}
+.footer_logo {
+    width: 65%!important;
+}
+.header_logo {
+    width: 70%!important;
+}
+.information {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.burger_adaptive {
+    align-items: flex-end;
+}
+.burger_element_fix {
+    margin-right: 0!important;
+}
+}
+@media screen and (max-width:500px) {
+    .image-grid div {
+        width: 95%;
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .image-grid div {
+        width: 48%;
+    }
+    .double_card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:767px) {
+.image-grid div {
+    width: 90%!important;
+}
+}
+@media screen and (max-width: 400px) {
+.image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+}
+.image-grid div { width: 100%; }
+}
+
+@media screen and (max-width:375px) {
+    .information {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .footer_logo {
+        width: 65%!important;
+    }
+    .details {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .information {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .footer_logo {
+        width: 65%!important;
+    }
+    .header_logo {
+        width: 60%!important;
+    }
+}
+
+/* Стили для суммы в таблицы услуги  */
+.services {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px #333a;
+    width: 100px;
+    margin: 7px;
+    padding: 2px 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .services::after {
+    position: absolute;
+    content: "•";
+    color: #f00;
+    right: -10px;
+    transition: 0.2s;
+  }
+  .services:hover {
+    box-shadow: 1px 1px 5px #444;
+  }
+  .services:active {    
+    box-shadow: 1px 1px 3px #222;
+  }
+  .services.active {
+    background-color: #eee;
+  }
+  .services.active::after {
+    right: 7px;
+  }
+  .result {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
