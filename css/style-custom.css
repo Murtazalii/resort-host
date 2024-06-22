@@ -351,7 +351,7 @@ border-radius: 20px
 
 @media (min-width:426px) and (max-width:767px) {
     .header_logo {
-        width: 50%!important;
+        width: 20%!important;
     }
 }
 
@@ -366,10 +366,10 @@ border-radius: 20px
 width: 48%; 
 }
 .footer_logo {
-    width: 65%!important;
+    width: 40%!important;
 }
 .header_logo {
-    width: 70%!important;
+    width: 30%!important;
 }
 .information {
     display: flex;
