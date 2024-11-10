@@ -1,0 +1,7 @@
+/* header .navbar {
+    opacity: 0.25;
+    background-color: black;
+} */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+}
