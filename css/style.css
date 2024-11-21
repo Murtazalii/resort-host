@@ -68,7 +68,7 @@ header .navbar .nav-link:hover {
 }
 
 header .navbar .nav-link.active {
-  color: #fff !important;
+  background-color: #cd1010 !important;
 }
 
 header .navbar .cta {
