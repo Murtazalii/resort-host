@@ -16,4 +16,9 @@ header .navbar .nav-link.active{
 }
 .result {
     padding-top: 30px;
+}
+.buttons_room {
+    display: flex;
+    justify-content: space-between;
+    
 }  

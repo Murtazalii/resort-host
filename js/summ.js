@@ -10,7 +10,7 @@ let obj = {
     usluga9: 2670,
     usluga10: 5510,
     usluga11: 4410,
-    usluga12: 1280,
+    usluga12: 2280,
   }
   
   let result = document.getElementById('result');
